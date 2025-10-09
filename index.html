@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Visernic — Modern Web & Product Design | MD Mostafa Niloy</title>
+  <meta name="description" content="Visernic Limited — product-focused web & mobile apps, 2D UI/UX, cloud and security. Based in Nazipur (Bangladesh) with UK registration. Contact: mostafa@visernic.com" />
+  <meta name="keywords" content="web development, mobile app, UI UX, product design, cybersecurity, Visernic" />
+  <link rel="canonical" href="https://visernic.com/" />
+  <meta name="robots" content="index,follow" />
+  <!-- Open Graph / Social -->
+  <meta property="og:site_name" content="Visernic" />
+  <meta property="og:title" content="Visernic — Web & Product Design" />
+  <meta property="og:description" content="Product-first teams building secure, beautiful web & mobile products." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://visernic.com/" />
+  <meta property="og:image" content="/og-image.png" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Structured Data (Organization + Person) -->
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Visernic Limited",
+    "url":"https://visernic.com",
+    "logo":"https://visernic.com/logo.png",
+    "sameAs":["https://www.linkedin.com/company/visernic"],
+    "contactPoint": [{ "@type": "ContactPoint", "telephone": "+447366493955", "contactType": "customer service", "email": "support@visernic.com" }]
+  }</script>
+
+  <!-- Tailwind CDN (production-safe subset) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* extra polish: 2D soft shadows, subtle entrance animations, accessibility */
+    :root{--accent:#4f46e5;--muted:#6b7280}
+    .soft-card{background:linear-gradient(180deg,#ffffff, #fbfbff); box-shadow:0 8px 24px rgba(79,70,229,0.08); border-radius:14px}
+    .subtle-fade{opacity:0;transform:translateY(8px);animation:fadeUp .6s forwards}
+    @keyframes fadeUp{to{opacity:1;transform:none}}
+    @media (prefers-reduced-motion:reduce){.subtle-fade{animation:none}}
+    /* responsive image utility fallback */
+    .hero-img{border-radius:12px;object-fit:cover}
+  </style>
+</head>
+<body class="antialiased text-gray-800 bg-gradient-to-b from-white to-gray-50">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b">
+    <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3" aria-label="Visernic - home">
+        <svg width="44" height="44" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="rounded-lg shadow-sm">
+          <rect width="100" height="100" rx="16" fill="url(#g)" />
+          <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-family="Inter, system-ui" font-size="54" fill="#fff">V</text>
+          <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#6366f1"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs>
+        </svg>
+        <div class="leading-tight">
+          <div class="font-semibold text-lg">Visernic</div>
+          <div class="text-xs text-gray-500">Product design · Engineering · Security</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#portfolio" class="hover:underline">Portfolio</a>
+        <a href="#ceo" class="hover:underline">CEO</a>
+        <a href="#contact" class="text-indigo-600 font-medium">Contact</a>
+      </nav>
+
+      <div class="md:hidden">
+        <button id="menuBtn" aria-label="Open menu" class="p-2 rounded-md">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="max-w-6xl mx-auto px-5 py-16 grid gap-10 md:grid-cols-2 items-center">
+      <div class="space-y-6">
+        <h1 class="text-3xl md:text-4xl font-extrabold leading-tight">We design and build modern web & mobile products — fast, secure, and beautiful.</h1>
+        <p class="text-gray-600 max-w-prose">Visernic is a product-focused studio: 2D UI/UX, full-stack engineering, and cloud security. We help startups and SMEs ship reliable digital products.</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-[var(--accent)] text-white shadow hover:opacity-95">Request proposal</a>
+          <a href="#portfolio" class="inline-flex items-center gap-2 px-4 py-2 rounded-md border">View portfolio</a>
+        </div>
+
+        <dl class="grid grid-cols-2 gap-4 text-sm text-gray-600 mt-4 max-w-md">
+          <div><dt class="font-medium">Phone</dt><dd><a href="tel:+447366493955">+44 7366 493955</a></dd></div>
+          <div><dt class="font-medium">Email</dt><dd><a href="mailto:mostafa@visernic.com">mostafa@visernic.com</a></dd></div>
+        </dl>
+      </div>
+
+      <div class="subtle-fade">
+        <picture>
+          <source srcset="/assets/visernic-office-341.png 1200w, /assets/visernic-office-341.png 800w, /assets/visernic-office-341.png 400w" sizes="(min-width:1024px) 480px, 100vw">
+          <img class="hero-img w-full h-72 md:h-96 soft-card" src="/assets/visernic-office-341.png" alt="Team collaborating on product design" loading="lazy">
+        </picture>
+      </div>
+    </section>
+
+    <!-- Services with icons (2D feel) -->
+    <section id="services" class="max-w-6xl mx-auto px-5 py-12">
+      <h2 class="text-2xl font-bold">Services</h2>
+      <p class="text-gray-600 mt-2">Design systems, product design, frontend & backend engineering, cloud & security.</p>
+      <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <article class="p-6 soft-card">
+          <h3 class="font-semibold">Product Design</h3>
+          <p class="text-sm text-gray-600 mt-2">User research, wireframes, high-fidelity 2D UI and design systems for scale.</p>
+        </article>
+        <article class="p-6 soft-card">
+          <h3 class="font-semibold">Frontend Engineering</h3>
+          <p class="text-sm text-gray-600 mt-2">Accessible, responsive interfaces with React / Vue.</p>
+        </article>
+        <article class="p-6 soft-card">
+          <h3 class="font-semibold">Backend & APIs</h3>
+          <p class="text-sm text-gray-600 mt-2">Robust APIs, data models and integrations.</p>
+        </article>
+        <article class="p-6 soft-card">
+          <h3 class="font-semibold">Cloud & Security</h3>
+          <p class="text-sm text-gray-600 mt-2">Architecture reviews, pen tests, monitoring and compliance guidance.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Portfolio (images optimized) -->
+    <section id="portfolio" class="max-w-6xl mx-auto px-5 py-12">
+      <h2 class="text-2xl font-bold">Selected work</h2>
+      <p class="text-gray-600 mt-2">Representative projects. Replace with client case studies and metrics.</p>
+      <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <figure class="soft-card overflow-hidden">
+          <img src="/assets/portfolio-1.jpg" alt="E-commerce dashboard" loading="lazy" class="w-full h-44 object-cover">
+          <figcaption class="p-4"><strong>E‑commerce Platform</strong><p class="text-sm text-gray-600">Payments, CMS and admin analytics.</p></figcaption>
+        </figure>
+        <figure class="soft-card overflow-hidden">
+          <img src="/assets/portfolio-2.jpg" alt="Healthcare app" loading="lazy" class="w-full h-44 object-cover">
+          <figcaption class="p-4"><strong>Healthcare Portal</strong><p class="text-sm text-gray-600">Secure patient dashboard & bookings.</p></figcaption>
+        </figure>
+        <figure class="soft-card overflow-hidden">
+          <img src="/assets/portfolio-3.jpg" alt="SaaS admin" loading="lazy" class="w-full h-44 object-cover">
+          <figcaption class="p-4"><strong>SaaS Admin</strong><p class="text-sm text-gray-600">Real-time metrics and roles.</p></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- CEO profile (standalone-like, responsive) -->
+    <section id="ceo" class="max-w-5xl mx-auto px-5 py-16 bg-white rounded-2xl shadow-lg">
+      <div class="grid gap-8 md:grid-cols-3 items-center">
+        <div class="flex flex-col items-center">
+          <img src="/assets/md-mostafa.png" alt="MD Mostafa Niloy" class="w-44 h-44 rounded-2xl object-cover shadow-md" loading="lazy" onerror="this.src='/assets/placeholder-person.png'">
+          <a href="/assets/Visernic_Mostafa_Niloy.vcf" class="mt-4 inline-block px-4 py-2 border rounded-md">Download vCard</a>
+        </div>
+        <div class="md:col-span-2">
+          <h3 class="text-2xl font-bold">MD Mostafa Niloy</h3>
+          <p class="text-sm text-gray-600">Founder & Managing Director — product strategy, architecture, and growth.</p>
+          <p class="mt-4 text-gray-700">Mostafa leads Visernic with a product-first mindset. He combines hands-on engineering with design thinking to ship secure, usable products. Experience includes building e-commerce, healthcare, and SaaS platforms.</p>
+
+          <ul class="mt-4 grid sm:grid-cols-2 gap-3 text-sm text-gray-700">
+            <li><strong>Contact:</strong> mostafa@visernic.com</li>
+            <li><strong>Phone:</strong> +44 7366 493955</li>
+            <li><strong>Skills:</strong> Product strategy, UI/UX, Cloud & Security</li>
+            <li><strong>Location:</strong> Nazipur, Naogaon • UK-registered</li>
+          </ul>
+
+          <div class="mt-6 flex gap-3">
+            <a href="mailto:mostafa@visernic.com" class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-[var(--accent)] text-white">Email</a>
+            <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-md border">Contact team</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="max-w-4xl mx-auto px-5 py-12">
+      <div class="grid gap-6 md:grid-cols-2">
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h4 class="font-semibold">Office & Contact</h4>
+          <address class="not-italic mt-3 text-sm text-gray-700">
+            Nazipur, Patnitala, Naogaon – 6540, Bangladesh<br>
+            Phone: <a href="tel:+447366493955">+44 7366 493955</a><br>
+            Email: <a href="mailto:support@visernic.com">support@visernic.com</a>
+          </address>
+        </div>
+        <form class="bg-white p-6 rounded-lg shadow-sm" id="contactForm">
+          <label class="block text-sm font-medium">Name<input name="name" required class="mt-2 w-full border rounded px-3 py-2"/></label>
+          <label class="block text-sm font-medium mt-3">Email<input name="email" type="email" required class="mt-2 w-full border rounded px-3 py-2"/></label>
+          <label class="block text-sm font-medium mt-3">Message<textarea name="message" rows="4" class="mt-2 w-full border rounded px-3 py-2"></textarea></label>
+          <div class="mt-4 flex items-center justify-between">
+            <button type="submit" class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-[var(--accent)] text-white">Send</button>
+            <div class="text-xs text-gray-500">We aim to reply within 24–48 hours</div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t mt-12">
+    <div class="max-w-6xl mx-auto px-5 py-6 text-sm text-gray-500 flex flex-col md:flex-row justify-between">
+      <div>© Visernic Limited — MD Mostafa Niloy</div>
+      <div>Registered in the UK • Unit 4, Storm 12 Plaza Shopping Centre, Southampton, SO14 0BH</div>
+    </div>
+  </footer>
+
+  <!-- Lightweight JS: forms + accessibility + mobile menu -->
+  <script>
+    // Prefer reduced motion
+    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){ document.documentElement.classList.add('reduce-motion'); }
+
+    // Simple form handling (demo)
+    document.getElementById('contactForm')?.addEventListener('submit', function(e){ e.preventDefault(); alert('Thanks — message received (demo).'); this.reset(); });
+
+    // Mobile menu (simple toggle)
+    const menuBtn = document.getElementById('menuBtn');
+    menuBtn?.addEventListener('click', ()=>{
+      alert('Open mobile menu (demo)');
+    });
+  </script>
+</body>
+</html>
