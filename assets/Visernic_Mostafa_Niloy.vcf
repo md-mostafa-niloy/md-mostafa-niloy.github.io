@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:MD Mostafa Niloy
+N:Niloy;Mostafa;MD;; 
+TITLE:Managing Director
+ORG:Visernic Limited
+TEL;TYPE=WORK,VOICE:+447366493955
+EMAIL;TYPE=WORK:mostafa@visernic.com
+EMAIL;TYPE=WORK,OTHER:support@visernic.com
+URL:https://visernic.com
+ADR;TYPE=WORK:;;Nazipur, Patnitala;Naogaon;;6540;Bangladesh
+NOTE:Founder & CEO of Visernic Limited — web & software development, UI/UX, digital marketing.
+END:VCARD
