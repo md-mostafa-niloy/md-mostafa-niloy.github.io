@@ -1,216 +1,261 @@
-<!doctype html>
-<html lang="bn">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Visernic — Modern Web & Product Design | MD Mostafa Niloy</title>
-  <meta name="description" content="Visernic Limited — product-focused web & mobile apps, 2D UI/UX, cloud and security. Based in Nazipur (Bangladesh) with UK registration. Contact: mostafa@visernic.com" />
-  <meta name="keywords" content="web development, mobile app, UI UX, product design, cybersecurity, Visernic" />
-  <link rel="canonical" href="https://visernic.com/" />
-  <meta name="robots" content="index,follow" />
-  <!-- Open Graph / Social -->
-  <meta property="og:site_name" content="Visernic" />
-  <meta property="og:title" content="Visernic — Web & Product Design" />
-  <meta property="og:description" content="Product-first teams building secure, beautiful web & mobile products." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://visernic.com/" />
-  <meta property="og:image" content="/og-image.png" />
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Mostafa Niloy - Chief Executive Officer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/L8PPqhKk/v.png">
 
-  <!-- Structured Data (Organization + Person) -->
-  <script type="application/ld+json">{
-    "@context":"https://schema.org",
-    "@type":"Organization",
-    "name":"Visernic Limited",
-    "url":"https://visernic.com",
-    "logo":"https://visernic.com/logo.png",
-    "sameAs":["https://www.linkedin.com/company/visernic"],
-    "contactPoint": [{ "@type": "ContactPoint", "telephone": "+447366493955", "contactType": "customer service", "email": "support@visernic.com" }]
-  }</script>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="MD Mostafa Niloy, Chief Executive Officer at Visernic Limited.">
+    <meta name="keywords" content="MD Mostafa Niloy, Visernic, Chief Executive Officer, Business Strategy, Leadership, Management, Bangladesh">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="MD Mostafa Niloy - Chief Executive Officer">
+    <meta property="og:description" content="MD Mostafa Niloy, CEO of Visernic Limited, leading innovation and strategic growth.">
+    <meta property="og:image" content="https://i.postimg.cc/ZKJwq0Sr/mostafa-niloy.jpg">
 
-  <!-- Tailwind CDN (production-safe subset) -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* extra polish: 2D soft shadows, subtle entrance animations, accessibility */
-    :root{--accent:#4f46e5;--muted:#6b7280}
-    .soft-card{background:linear-gradient(180deg,#ffffff, #fbfbff); box-shadow:0 8px 24px rgba(79,70,229,0.08); border-radius:14px}
-    .subtle-fade{opacity:0;transform:translateY(8px);animation:fadeUp .6s forwards}
-    @keyframes fadeUp{to{opacity:1;transform:none}}
-    @media (prefers-reduced-motion:reduce){.subtle-fade{animation:none}}
-    /* responsive image utility fallback */
-    .hero-img{border-radius:12px;object-fit:cover}
-  </style>
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="MD Mostafa Niloy - Chief Executive Officer">
+    <meta property="twitter:description" content="Professional profile of MD Mostafa Niloy, CEO at Visernic Limited, Bangladesh.">
+    <meta property="twitter:image" content="https://i.postimg.cc/ZKJwq0Sr/mostafa-niloy.jpg">
+
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .action-button, .social-icon {
+            transition: all 0.2s ease-in-out;
+        }
+        .action-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .social-icon:hover {
+            transform: translateY(-2px);
+            color: #2563eb;
+        }
+        .content-card {
+            transition: all 0.3s ease-in-out;
+        }
+        .content-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        }
+    </style>
 </head>
-<body class="antialiased text-gray-800 bg-gradient-to-b from-white to-gray-50">
-  <!-- Header -->
-  <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b">
-    <div class="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
-      <a href="/" class="flex items-center gap-3" aria-label="Visernic - home">
-        <svg width="44" height="44" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="rounded-lg shadow-sm">
-          <rect width="100" height="100" rx="16" fill="url(#g)" />
-          <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-family="Inter, system-ui" font-size="54" fill="#fff">V</text>
-          <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#6366f1"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs>
-        </svg>
-        <div class="leading-tight">
-          <div class="font-semibold text-lg">Visernic</div>
-          <div class="text-xs text-gray-500">Product design · Engineering · Security</div>
-        </div>
-      </a>
+<body class="text-slate-800">
 
-      <nav class="hidden md:flex items-center gap-6 text-sm">
-        <a href="#services" class="hover:underline">Services</a>
-        <a href="#portfolio" class="hover:underline">Portfolio</a>
-        <a href="#ceo" class="hover:underline">CEO</a>
-        <a href="#contact" class="text-indigo-600 font-medium">Contact</a>
-      </nav>
+    <div class="w-full max-w-5xl mx-auto">
+        <!-- Header Section -->
+        <header class="relative">
+            <div class="h-48 bg-slate-800 rounded-b-3xl">
+                <img src="https://i.postimg.cc/ZKJwq0Sr/mostafa-niloy.jpg" class="object-cover w-full h-full rounded-b-3xl opacity-20" alt="Banner Image">
+            </div>
+            <div class="absolute top-24 left-1/2 -translate-x-1/2 w-full px-4">
+                <div class="relative text-center">
+                    <img class="w-36 h-36 rounded-full shadow-lg border-4 border-white mx-auto" 
+                         src="https://i.postimg.cc/76Cf9P4F/md-mostafa.png" 
+                         onerror="this.onerror=null;this.src='https://placehold.co/144x144/e2e8f0/4a5568?text=Profile';" 
+                         alt="Profile picture of MD Mostafa Niloy">
+                    <div class="absolute top-24 right-1/2 translate-x-[60px] bg-green-500 w-6 h-6 rounded-full border-4 border-white animate-pulse"></div>
+                </div>
+            </div>
+        </header>
 
-      <div class="md:hidden">
-        <button id="menuBtn" aria-label="Open menu" class="p-2 rounded-md">☰</button>
-      </div>
+        <!-- Profile Info Section -->
+        <section class="text-center mt-20 px-4">
+            <div class="flex items-center justify-center">
+                <h1 class="text-4xl font-extrabold text-slate-900">MD Mostafa Niloy</h1>
+                <span class="ml-2 text-blue-500" title="Verified Professional">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a.75.75 0 00-1.06-1.06L9 10.94l-1.72-1.72a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.06 0l4.25-4.25z" clip-rule="evenodd" /></svg>
+                </span>
+            </div>
+            <p class="text-lg text-slate-600 font-medium mt-1">Founder & Chief Executive Officer at <a href="https://visernic.com" target="_blank" rel="noopener noreferrer"</a> <span class="font-semibold text-blue-600">Visernic Limited</span></p>
+            <div class="mt-6 flex items-center justify-center gap-4">
+                <a href="mailto:mostafa@visernic.com" class="action-button bg-blue-600 text-white font-bold text-sm py-3 px-5 rounded-full flex items-center justify-center hover:bg-blue-700">
+                    <i class="fas fa-envelope mr-2"></i> Email Me
+                </a>
+                <a href="tel:+447577062211" class="action-button bg-slate-200 text-slate-800 font-bold text-sm py-3 px-5 rounded-full flex items-center justify-center hover:bg-slate-300">
+                    <i class="fas fa-phone mr-2"></i> Call Me
+                </a>
+                 <a href="#" id="downloadVcardBtn" download="MD_Mostafa_Niloy.vcf" class="action-button bg-slate-200 text-slate-800 font-bold text-sm py-3 px-5 rounded-full flex items-center justify-center hover:bg-slate-300">
+                    <i class="fas fa-download mr-2"></i> Save Contact
+                </a>
+            </div>
+             <div class="mt-6 flex items-center justify-center space-x-6 text-slate-400">
+                <a href="https://www.instagram.com/vsn.mostafa" target="_blank" class="social-icon"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="https://www.facebook.com/vsn.mostafa" target="_blank" class="social-icon"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="https://www.twitter.com/vsn_mostafa" target="_blank" class="social-icon"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="https://www.github.com/md-mostafa-niloy" target="_blank" class="social-icon"><i class="fab fa-github fa-lg"></i></a>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="mt-10 p-4 grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Left Column -->
+            <div class="lg:col-span-2 space-y-8">
+                <div class="content-card bg-white p-6 sm:p-8 rounded-3xl shadow-lg border border-slate-200">
+                    <h2 class="text-2xl font-bold text-slate-800 mb-4">About Me</h2>
+                    <p class="text-base leading-relaxed text-slate-600">As the Founder and CEO of Visernic Limited, I lead with a vision to create innovative, reliable, and human-focused digital solutions. With a strong background in web & software development and digital marketing, business strategy, I’m dedicated to driving technological growth and empowering global clients through creativity, precision, and integrity.</p>
+                </div>
+                
+                <div class="content-card bg-white p-6 sm:p-8 rounded-3xl shadow-lg border border-slate-200">
+                    <h2 class="text-2xl font-bold text-slate-800 mb-5">Experience</h2>
+                    <div class="space-y-6 border-l-2 border-slate-200 ml-2 pl-6">
+                         <div class="relative">
+                            <div class="absolute -left-[35px] top-1.5 h-4 w-4 rounded-full bg-blue-500 border-4 border-white"></div>
+                            <h3 class="font-semibold text-slate-900 text-lg">Chief Executive Officer</h3>
+                            <p class="text-md text-slate-600">Visernic Limited | 2024 - Present</p>
+                        </div>
+                        <div class="relative">
+                           <div class="absolute -left-[35px] top-1.5 h-4 w-4 rounded-full bg-slate-300 border-4 border-white"></div>
+                            <h3 class="font-semibold text-slate-900 text-lg">Web Development Manager</h3>
+                            <p class="text-md text-slate-600">LiquidThemes LLC | 2022 - 2025</p>
+                        </div>
+                        <div class="relative">
+                           <div class="absolute -left-[35px] top-1.5 h-4 w-4 rounded-full bg-slate-300 border-4 border-white"></div>
+                            <h3 class="font-semibold text-slate-900 text-lg">Marketing Manager</h3>
+                            <p class="text-md text-slate-600">TechEase Solutions | 2018 - 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card bg-white p-6 sm:p-8 rounded-3xl shadow-lg border border-slate-200">
+                    <h2 class="text-2xl font-bold text-slate-800 mb-5">Projects Highlights</h2>
+                    <div class="space-y-5">
+                        <div>
+                            <h3 class="font-semibold text-slate-900 text-lg">Enterprise Management Software</h3>
+                            <p class="text-base text-slate-600">Developed a scalable ERP system improving internal efficiency and automation across departments.</p>
+                        </div>
+                         <div>
+                            <h3 class="font-semibold text-slate-900 text-lg">Full-Stack Web Platform</h3>
+                            <p class="text-base text-slate-600">Directed a development team to build a custom e-commerce platform serving 50,000+ active users.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card bg-white p-6 sm:p-8 rounded-3xl shadow-lg border border-slate-200">
+                    <h2 class="text-2xl font-bold text-slate-800 mb-5">What Partners Say</h2>
+                    <div class="space-y-5">
+                        <blockquote class="text-base text-slate-600 italic border-l-4 border-blue-200 pl-4">
+                            "MD Mostafa Niloy’ leadership in technology and innovation has set a benchmark for excellence. His ability to turn ideas into powerful digital solutions is remarkable."
+                        </blockquote>
+                        <p class="text-right font-semibold text-slate-700">- Board of Directors, Visernic Limited</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column -->
+            <div class="lg:col-span-1 space-y-8">
+                <div class="content-card bg-white p-6 sm:p-8 rounded-3xl shadow-lg border border-slate-200">
+                    <h2 class="text-2xl font-bold text-slate-800 mb-4">Contact Information</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-slate-400 w-5 text-center"></i>
+                            <span class="ml-3 font-medium text-slate-600 break-all">mostafa@visernic.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-slate-400 w-5 text-center"></i>
+                            <span class="ml-3 font-medium text-slate-600">+44 7577 062211</span>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-slate-400 w-5 text-center pt-1"></i>
+                            <span class="ml-3 font-small text-slate-600">Nazipur, Patnitala, Naogaon</span>
+                        </div>
+                    </div>
+                    <hr class="my-6 border-slate-200">
+                    <div class="text-center">
+                        <h3 class="text-lg font-semibold text-slate-800 mb-2">Scan QR Code</h3>
+                        <div class="flex justify-center">
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=BEGIN%3AVCARD%0AVERSION%3A3.0%0AN%3ANiloy%3BMD%20Mostafa%0AFN%3AMD%20Mostafa%20Niloy%0AORG%3AVisernic%20Limited%0ATITLE%3AChief%20Executive%20Officer%0ATEL%3BTYPE%3DWORK%2CVOICE%3A%2B447577062211%0AEMAIL%3Amostafa%40visernic.com%0AADR%3BTYPE%3DWORK%3A%3B%3BNazipur%3BNaogaon%3B6540%3BBangladesh%0AEND%3AVCARD" alt="Contact QR Code" class="rounded-lg">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content-card bg-white p-6 sm:p-8 rounded-3xl shadow-lg border border-slate-200">
+                    <h2 class="text-2xl font-bold text-slate-800 mb-4">Core Competencies</h2>
+                    <div class="space-y-3">
+                        <div class="flex items-center"><i class="fas fa-check-circle text-green-500 w-5 text-center"></i><span class="ml-3 font-medium">Web Development</span></div>
+                        <div class="flex items-center"><i class="fas fa-check-circle text-green-500 w-5 text-center"></i><span class="ml-3 font-medium">Software Engineering</span></div>
+                        <div class="flex items-center"><i class="fas fa-check-circle text-green-500 w-5 text-center"></i><span class="ml-3 font-medium">Business Strategy</span></div>
+                        <div class="flex items-center"><i class="fas fa-check-circle text-green-500 w-5 text-center"></i><span class="ml-3 font-medium">Project Leadership</span></div>
+                        <div class="flex items-center"><i class="fas fa-check-circle text-green-500 w-5 text-center"></i><span class="ml-3 font-medium">Client Relations</span></div>
+                        <div class="flex items-center"><i class="fas fa-check-circle text-green-500 w-5 text-center"></i><span class="ml-3 font-medium">Digital Marketing</span></div>
+                        <div class="flex items-center"><i class="fas fa-check-circle text-green-500 w-5 text-center"></i><span class="ml-3 font-medium">Cloud Solutions</span></div>
+                        <div class="flex items-center"><i class="fas fa-check-circle text-green-500 w-5 text-center"></i><span class="ml-3 font-medium">Team Collaboration</span></div>
+                    </div>
+                </div>
+
+                <div class="content-card bg-white p-6 sm:p-8 rounded-3xl shadow-lg border border-slate-200">
+                    <h2 class="text-2xl font-bold text-slate-800 mb-4">Education</h2>
+                    <div class="space-y-5">
+                        <div class="flex items-start">
+                            <i class="fas fa-graduation-cap text-slate-400 mt-1"></i>
+                            <div class="ml-4">
+                                <h3 class="font-semibold text-slate-900 text-lg">MBA (Business Administration)</h3>
+                                <p class="text-md text-slate-600">University of Dhaka</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-graduation-cap text-slate-400 mt-1"></i>
+                            <div class="ml-4">
+                                <h3 class="font-semibold text-slate-900 text-lg">BBA (Management)</h3>
+                                <p class="text-md text-slate-600">University of Rajshahi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
-  </header>
+    
+    <footer class="text-center text-sm text-slate-500 pt-8 pb-8">
+        &copy; 2025 Visernic Limited. All Rights Reserved.
+    </footer>
 
-  <!-- Hero -->
-  <main>
-    <section class="max-w-6xl mx-auto px-5 py-16 grid gap-10 md:grid-cols-2 items-center">
-      <div class="space-y-6">
-        <h1 class="text-3xl md:text-4xl font-extrabold leading-tight">We design and build modern web & mobile products — fast, secure, and beautiful.</h1>
-        <p class="text-gray-600 max-w-prose">Visernic is a product-focused studio: 2D UI/UX, full-stack engineering, and cloud security. We help startups and SMEs ship reliable digital products.</p>
-        <div class="flex flex-wrap gap-3">
-          <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-[var(--accent)] text-white shadow hover:opacity-95">Request proposal</a>
-          <a href="#portfolio" class="inline-flex items-center gap-2 px-4 py-2 rounded-md border">View portfolio</a>
-        </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const downloadButton = document.getElementById('downloadVcardBtn');
+            
+            if (downloadButton) {
+                const vCardData = `BEGIN:VCARD
+VERSION:3.0
+N:Niloy;MD Mostafa;;;
+FN:MD Mostafa Niloy
+ORG:Visernic Limited
+TITLE:Chief Executive Officer
+TEL;TYPE=WORK,VOICE:+8801755123456
+EMAIL:mostafa@visernic.com
+ADR;TYPE=WORK:;;Banani;Dhaka;1213;Bangladesh
+END:VCARD`;
 
-        <dl class="grid grid-cols-2 gap-4 text-sm text-gray-600 mt-4 max-w-md">
-          <div><dt class="font-medium">Phone</dt><dd><a href="tel:+447366493955">+44 7366 493955</a></dd></div>
-          <div><dt class="font-medium">Email</dt><dd><a href="mailto:mostafa@visernic.com">mostafa@visernic.com</a></dd></div>
-        </dl>
-      </div>
-
-      <div class="subtle-fade">
-        <picture>
-          <source srcset="/assets/visernic-office-341.png 1200w, /assets/visernic-office-341.png 800w, /assets/visernic-office-341.png 400w" sizes="(min-width:1024px) 480px, 100vw">
-          <img class="hero-img w-full h-72 md:h-96 soft-card" src="/assets/visernic-office-341.png" alt="Team collaborating on product design" loading="lazy">
-        </picture>
-      </div>
-    </section>
-
-    <!-- Services with icons (2D feel) -->
-    <section id="services" class="max-w-6xl mx-auto px-5 py-12">
-      <h2 class="text-2xl font-bold">Services</h2>
-      <p class="text-gray-600 mt-2">Design systems, product design, frontend & backend engineering, cloud & security.</p>
-      <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        <article class="p-6 soft-card">
-          <h3 class="font-semibold">Product Design</h3>
-          <p class="text-sm text-gray-600 mt-2">User research, wireframes, high-fidelity 2D UI and design systems for scale.</p>
-        </article>
-        <article class="p-6 soft-card">
-          <h3 class="font-semibold">Frontend Engineering</h3>
-          <p class="text-sm text-gray-600 mt-2">Accessible, responsive interfaces with React / Vue.</p>
-        </article>
-        <article class="p-6 soft-card">
-          <h3 class="font-semibold">Backend & APIs</h3>
-          <p class="text-sm text-gray-600 mt-2">Robust APIs, data models and integrations.</p>
-        </article>
-        <article class="p-6 soft-card">
-          <h3 class="font-semibold">Cloud & Security</h3>
-          <p class="text-sm text-gray-600 mt-2">Architecture reviews, pen tests, monitoring and compliance guidance.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Portfolio (images optimized) -->
-    <section id="portfolio" class="max-w-6xl mx-auto px-5 py-12">
-      <h2 class="text-2xl font-bold">Selected work</h2>
-      <p class="text-gray-600 mt-2">Representative projects. Replace with client case studies and metrics.</p>
-      <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <figure class="soft-card overflow-hidden">
-          <img src="/assets/portfolio-1.jpg" alt="E-commerce dashboard" loading="lazy" class="w-full h-44 object-cover">
-          <figcaption class="p-4"><strong>E‑commerce Platform</strong><p class="text-sm text-gray-600">Payments, CMS and admin analytics.</p></figcaption>
-        </figure>
-        <figure class="soft-card overflow-hidden">
-          <img src="/assets/portfolio-2.jpg" alt="Healthcare app" loading="lazy" class="w-full h-44 object-cover">
-          <figcaption class="p-4"><strong>Healthcare Portal</strong><p class="text-sm text-gray-600">Secure patient dashboard & bookings.</p></figcaption>
-        </figure>
-        <figure class="soft-card overflow-hidden">
-          <img src="/assets/portfolio-3.jpg" alt="SaaS admin" loading="lazy" class="w-full h-44 object-cover">
-          <figcaption class="p-4"><strong>SaaS Admin</strong><p class="text-sm text-gray-600">Real-time metrics and roles.</p></figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- CEO profile (standalone-like, responsive) -->
-    <section id="ceo" class="max-w-5xl mx-auto px-5 py-16 bg-white rounded-2xl shadow-lg">
-      <div class="grid gap-8 md:grid-cols-3 items-center">
-        <div class="flex flex-col items-center">
-          <img src="/assets/md-mostafa.png" alt="MD Mostafa Niloy" class="w-44 h-44 rounded-2xl object-cover shadow-md" loading="lazy" onerror="this.src='/assets/placeholder-person.png'">
-          <a href="/assets/Visernic_Mostafa_Niloy.vcf" class="mt-4 inline-block px-4 py-2 border rounded-md">Download vCard</a>
-        </div>
-        <div class="md:col-span-2">
-          <h3 class="text-2xl font-bold">MD Mostafa Niloy</h3>
-          <p class="text-sm text-gray-600">Founder & Managing Director — product strategy, architecture, and growth.</p>
-          <p class="mt-4 text-gray-700">Mostafa leads Visernic with a product-first mindset. He combines hands-on engineering with design thinking to ship secure, usable products. Experience includes building e-commerce, healthcare, and SaaS platforms.</p>
-
-          <ul class="mt-4 grid sm:grid-cols-2 gap-3 text-sm text-gray-700">
-            <li><strong>Contact:</strong> mostafa@visernic.com</li>
-            <li><strong>Phone:</strong> +44 7366 493955</li>
-            <li><strong>Skills:</strong> Product strategy, UI/UX, Cloud & Security</li>
-            <li><strong>Location:</strong> Nazipur, Naogaon • UK-registered</li>
-          </ul>
-
-          <div class="mt-6 flex gap-3">
-            <a href="mailto:mostafa@visernic.com" class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-[var(--accent)] text-white">Email</a>
-            <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-md border">Contact team</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="max-w-4xl mx-auto px-5 py-12">
-      <div class="grid gap-6 md:grid-cols-2">
-        <div class="bg-white p-6 rounded-lg shadow-sm">
-          <h4 class="font-semibold">Office & Contact</h4>
-          <address class="not-italic mt-3 text-sm text-gray-700">
-            Nazipur, Patnitala, Naogaon – 6540, Bangladesh<br>
-            Phone: <a href="tel:+447366493955">+44 7366 493955</a><br>
-            Email: <a href="mailto:support@visernic.com">support@visernic.com</a>
-          </address>
-        </div>
-        <form class="bg-white p-6 rounded-lg shadow-sm" id="contactForm">
-          <label class="block text-sm font-medium">Name<input name="name" required class="mt-2 w-full border rounded px-3 py-2"/></label>
-          <label class="block text-sm font-medium mt-3">Email<input name="email" type="email" required class="mt-2 w-full border rounded px-3 py-2"/></label>
-          <label class="block text-sm font-medium mt-3">Message<textarea name="message" rows="4" class="mt-2 w-full border rounded px-3 py-2"></textarea></label>
-          <div class="mt-4 flex items-center justify-between">
-            <button type="submit" class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-[var(--accent)] text-white">Send</button>
-            <div class="text-xs text-gray-500">We aim to reply within 24–48 hours</div>
-          </div>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="border-t mt-12">
-    <div class="max-w-6xl mx-auto px-5 py-6 text-sm text-gray-500 flex flex-col md:flex-row justify-between">
-      <div>© Visernic Limited — MD Mostafa Niloy</div>
-      <div>Registered in the UK • Unit 4, Storm 12 Plaza Shopping Centre, Southampton, SO14 0BH</div>
-    </div>
-  </footer>
-
-  <!-- Lightweight JS: forms + accessibility + mobile menu -->
-  <script>
-    // Prefer reduced motion
-    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){ document.documentElement.classList.add('reduce-motion'); }
-
-    // Simple form handling (demo)
-    document.getElementById('contactForm')?.addEventListener('submit', function(e){ e.preventDefault(); alert('Thanks — message received (demo).'); this.reset(); });
-
-    // Mobile menu (simple toggle)
-    const menuBtn = document.getElementById('menuBtn');
-    menuBtn?.addEventListener('click', ()=>{
-      alert('Open mobile menu (demo)');
-    });
-  </script>
+                try {
+                    const blob = new Blob([vCardData], { type: 'text/vcard;charset=utf-8' });
+                    const url = URL.createObjectURL(blob);
+                    downloadButton.href = url;
+                } catch (e) {
+                    console.error("vCard creation failed.", e);
+                    if(downloadButton) downloadButton.style.display = 'none';
+                }
+            }
+        });
+    </script>
 </body>
 </html>
